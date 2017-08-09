@@ -1,9 +1,6 @@
-.App {
-  text-align: left;
-}
-
 .Header {
   text-align: center;
+  color: #002663;
 }
 
 .Footer {
@@ -14,21 +11,50 @@
   width: calc(100% / 4);
   display: inline-block;
   vertical-align: top;
-  border:1px solid red;
-  text-align:center;
+  border:1px solid black;
   margin: 2% 4%;
-  height: 160px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.CardTitle {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.CardContainer {
+  width: 100%;
+}
+
+.CardIcon {
+  float: left;
+  width: 30%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.CardIcon img {
+  display: block;
+  margin: auto;
+}
+
+.CardContent {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
 }
 
 .Cards {
-  width:80%;
+  width:60%;
   margin: auto;
-  text-align: center;
-  background-color: #d3d3d3;
 }
 
 .Searchbar {
-  width: 60%;
+  width: 40%;
   height: 50px;
   margin: auto;
   text-align: center;
