@@ -7,7 +7,7 @@ import Contact from './Contact';
 export default class Content extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Cards />
         <Searchbar />
         <Contact />
