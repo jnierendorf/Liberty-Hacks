@@ -15,7 +15,7 @@ export default class PasswordCard extends React.Component {
           </div>
           <div className="CardContent">
             <ul>
-              <li>Reset your password</li>
+              <li>Reset your password!!!</li>
               <li>Unlock your account</li>
               <li>Change security questions</li>
             </ul>
