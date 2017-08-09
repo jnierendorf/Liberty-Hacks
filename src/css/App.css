@@ -1,0 +1,46 @@
+.App {
+  text-align: left;
+}
+
+.Header {
+  text-align: center;
+}
+
+.Footer {
+  text-align: center;
+}
+
+.Card {
+  width: calc(100% / 4);
+  display: inline-block;
+  vertical-align: top;
+  border:1px solid red;
+  text-align:center;
+  margin: 2% 4%;
+  height: 160px;
+}
+
+.Cards {
+  width:80%;
+  margin: auto;
+  text-align: center;
+  background-color: #d3d3d3;
+}
+
+.Searchbar {
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  background-color: #d3d3d3;
+  margin-top: 40px;
+}
+
+.Contact {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  background-color: #d3d3d3;
+  margin-top: 40px;
+}
