@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.Tutorial {
+  text-align: center;
+  font-size:small;
+}
+
 .Card {
   width: calc(100% / 4);
   display: inline-block;
