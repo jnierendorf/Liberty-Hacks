@@ -10,7 +10,7 @@ import SkypeCard from './cards/SkypeCard';
 export default class Cards extends React.Component {
   render() {
     return (
-      <div className="Caaaads">
+      <div className="Cards">
         <PasswordCard />
         <RsaCard />
         <OutlookCard />

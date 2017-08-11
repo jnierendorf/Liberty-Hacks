@@ -5,6 +5,7 @@ export default class Searchbar extends React.Component {
     return (
       <div className="Searchbar">
         <p>This is a search bar!</p>
+        
       </div>
     );
   }
