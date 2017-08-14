@@ -13,12 +13,12 @@
 }
 
 .Card {
-  width: calc(100% / 4);
+  width: 290px;
   display: inline-block;
   vertical-align: top;
   border:1px solid black;
-  margin: 2% 4%;
-  height: 180px;
+  margin: 10px 20px;
+  height: 170px;
   border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .Cards {
-  width:60%;
+  width: 1000px;
   margin: auto;
 }
 
