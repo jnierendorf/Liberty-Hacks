@@ -1,23 +1,18 @@
 import React from 'react';
 
-import icon from '../../../media/Password-Icon.png';
+import icon from '../../../../media/skype.png';
 
-export default class PasswordCard extends React.Component {
+export default class SkypeWontLaunch extends React.Component {
   render() {
     return (
       <div className="Card">
-        <div className="CardTitle">
-          Password Support
-        </div>
         <div className="CardContainer">
           <div className="CardIcon">
             <img src={icon}></img>
           </div>
           <div className="CardContent">
             <ul>
-              <li>Reset your password!!!</li>
-              <li>Unlock your account</li>
-              <li>Change security questions</li>
+              <li>Skype doesn&#39;t launch when I turn on my computer.</li>
             </ul>
           </div>
         </div>
