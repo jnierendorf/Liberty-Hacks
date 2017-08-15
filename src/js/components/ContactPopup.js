@@ -1,8 +1,15 @@
 import React from 'react';
 
+import TimePicker from 'rc-time-picker';
+import moment from 'moment';
+
 import '../../css/components/ContactPopup.css';
+import 'rc-time-picker/assets/index.css'
 
 export default class ContactPopup extends React.Component {
+  onChange(value) {
+    console.log(value && value.format('h:mm a'));
+  }
   render() {
     return (
       <div className='Popup'>
@@ -46,18 +53,21 @@ export default class ContactPopup extends React.Component {
 
             <div className="ContactInput">
               <span>Callback Time:</span>
-              <div>
+              <div className="ContactTime">
                 <div className="ContactTimeInput">
                   <input type="radio" name="callback" value="asap" defaultChecked/>
                   <span>ASAP</span>
                 </div>
                 <div className="ContactTimeInput">
                   <input type="radio" name="callback" value="custom"/>
-                  <span>Custom</span>
+                    <TimePicker
+                      showSecond={false}
+                      defaultValue={moment().hour(0).minute(0)}
+                      className="ContactTimePicker"
+                      onChange={this.onChange}
+                      format={'h:mm a'}
+                      use12Hours />
                 </div>
-              </div>
-              <div className="ContactTimeDisplay">
-                2:30 PM
               </div>
             </div>
 
