@@ -9,8 +9,9 @@ export default class Content extends React.Component {
     return (
       <div>
         <Cards />
-        <Searchbar />
+        <Searchbar/>
         <Contact />
+
       </div>
     );
   }

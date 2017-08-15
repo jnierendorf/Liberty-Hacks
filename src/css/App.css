@@ -1,3 +1,4 @@
+
 .Header {
   text-align: center;
   color: #002663;
@@ -60,12 +61,15 @@
 
 .Searchbar {
   width: 40%;
-  height: 50px;
+  height: 40px;
+  border:1px solid black;
   margin: auto;
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #FFFFFF;
   margin-top: 40px;
 }
+
+
 
 .Contact {
   width: 200px;
