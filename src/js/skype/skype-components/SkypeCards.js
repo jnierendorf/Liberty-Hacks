@@ -4,6 +4,8 @@ import SkypeChangeAddPic from './skype-cards/SkypeChangeAddPic';
 import SkypeWontLaunch from './skype-cards/SkypeWontLaunch';
 import SkypeTroubleshooting from './skype-cards/SkypeTroubleshooting';
 
+import '../../../css/components/Cards.css';
+
 import { Link } from 'react-router-dom';
 
 

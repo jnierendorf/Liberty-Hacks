@@ -7,6 +7,8 @@ import PhoneCard from './cards/PhoneCard';
 import HardwareCard from './cards/HardwareCard';
 import SkypeCard from './cards/SkypeCard';
 
+import '../../css/components/Cards.css';
+
 import { Link } from 'react-router-dom';
 
 

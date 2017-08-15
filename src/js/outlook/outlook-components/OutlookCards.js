@@ -2,6 +2,8 @@ import React from 'react';
 
 import ChangeOutlookPic from './outlook-cards/ChangeOutlookPic';
 
+import '../../../css/components/Cards.css';
+
 import { Link } from 'react-router-dom';
 
 
