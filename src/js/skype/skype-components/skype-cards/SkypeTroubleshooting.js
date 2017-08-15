@@ -1,8 +1,8 @@
 import React from 'react';
 
-import icon from '../../../media/person.png';
+import icon from '../../../../media/trouble.png';
 
-export default class ChangeAddSkypePic extends React.Component {
+export default class SkypeTroubleshooting extends React.Component {
   render() {
     return (
       <div className="Card">
@@ -12,7 +12,7 @@ export default class ChangeAddSkypePic extends React.Component {
           </div>
           <div className="CardContent">
             <ul>
-              <li>I want to change or add a profile picture to Skype</li>
+              <li>Troubleshooting</li>
             </ul>
           </div>
         </div>

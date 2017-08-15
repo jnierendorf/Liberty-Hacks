@@ -12,5 +12,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "-Justin Nierendorf\r -Michelle Kim\r -Jason Theoharis",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnierendorf/Liberty-Hacks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnierendorf/Liberty-Hacks/issues"
+  },
+  "homepage": "https://github.com/jnierendorf/Liberty-Hacks#readme"
 }
