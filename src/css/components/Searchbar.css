@@ -1,8 +1,6 @@
 .Searchbar {
-  width: 40%;
-  height: 50px;
-  margin: auto;
-  text-align: center;
-  background-color: #d3d3d3;
-  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  margin-top: 30px;
 }
