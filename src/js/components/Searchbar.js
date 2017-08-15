@@ -1,7 +1,7 @@
 import React from 'react';
-/*
+
 import '../../css/components/Searchbar.css';
-*/
+
 import Autosuggest from 'react-autosuggest';
 
 const people = [
