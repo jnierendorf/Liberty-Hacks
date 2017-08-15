@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../css/components/ContactPopup.css';
+
 export default class ContactPopup extends React.Component {
   render() {
     return (
