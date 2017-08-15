@@ -1,5 +1,7 @@
 import React from 'react';
-
+/*
+import '../../css/components/Searchbar.css';
+*/
 import Autosuggest from 'react-autosuggest';
 
 const people = [
@@ -94,16 +96,3 @@ export default class Searchbar extends React.Component {
     );
   }
 }
-/*
-
-export default class Searchbar extends React.Component {
-  render() {
-    return (
-      <div className="Searchbar">
-        <p>This is a search bar!</p>
-
-      </div>
-    );
-  }
-}
-*/

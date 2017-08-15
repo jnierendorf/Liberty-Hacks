@@ -1,0 +1,16 @@
+.Contact {
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ContactButton {
+  width: 250px;
+  height: 100%;
+  background-color: #002663;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+}
