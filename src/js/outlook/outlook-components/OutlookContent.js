@@ -10,8 +10,6 @@ export default class OutlookContent extends React.Component {
     return (
       <div>
         <OutlookCards />
-        <Searchbar />
-        <Contact />
       </div>
     );
   }
