@@ -1,0 +1,15 @@
+.Script {
+  margin-left: 360px;
+  border:0.5px solid grey;
+  width: 790px;
+  font-family: Helvetica, sans-serif;
+  line-height: 50px;
+}
+
+.ScriptExit {
+  margin-top: 20px;
+  margin-left: 1090px;
+  border:0.5px solid grey;
+  width: 10px;
+  left: 10;
+}
