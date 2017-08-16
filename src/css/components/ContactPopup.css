@@ -109,7 +109,7 @@
 }
 
 .ContactTimeInput {
-  width: 40%;
+  width: 72%;
   text-align: left;
   float: left;
   display: block;
@@ -129,11 +129,12 @@
 .ContactTimeInput span {
   margin: 5px 0;
   padding: 0;
+  float: left;
+
 }
 
-.ContactTimeDisplay {
-  margin-top: 22px;
-  padding-top: 0;
-  font-size: 24px;
-  color: red;
+.ContactTimePicker input {
+  width: 100px;
+  margin: 0;
+  padding: 0;
 }
