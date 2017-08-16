@@ -14,3 +14,17 @@
   font-weight: bold;
   padding: 15px;
 }
+
+#callbackInfo {
+  display: block;
+  text-align: left;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 20px;
+  background-color: white;
+}
