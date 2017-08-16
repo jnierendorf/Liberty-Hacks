@@ -1,6 +1,7 @@
 .Header {
   text-align: center;
   color: #002663;
+  margin-bottom: 1px;
 }
 
 .Footer {
@@ -10,4 +11,10 @@
 .Tutorial {
   text-align: center;
   font-size:small;
+}
+
+.BackButton {
+  margin-left: 150px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
