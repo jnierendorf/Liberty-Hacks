@@ -3,6 +3,7 @@ import React from 'react';
 import SkypeChangeAddPic from './skype-cards/SkypeChangeAddPic';
 import SkypeWontLaunch from './skype-cards/SkypeWontLaunch';
 import SkypeTroubleshooting from './skype-cards/SkypeTroubleshooting';
+import SkypeWontLaunchScript from './skype-scripts/SkypeWontLaunchScript';
 
 import '../../../css/components/Cards.css';
 
@@ -14,7 +15,7 @@ export default class SkypeCards extends React.Component {
     return (
       <div className="Cards">
         <SkypeChangeAddPic />
-        <SkypeWontLaunch />
+        <Link to='/skype/wontlaunch'><SkypeWontLaunch /></Link>
         <SkypeTroubleshooting />
       </div>
     );
