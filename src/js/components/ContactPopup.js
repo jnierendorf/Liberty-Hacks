@@ -9,8 +9,37 @@ import '../../css/components/ContactPopup.css';
 import 'rc-time-picker-15-minutes/assets/index.css'
 
 export default class ContactPopup extends React.Component {
-  onChange(value) {
-    console.log(value && value.format('h:mm a'));
+  constructor(props) {
+    super(props);
+
+    // Set up state to be ready to collect form info
+    this.state = {
+      number: '',
+      callback: '',
+      summary: '',
+      urgency: 'low',
+      time: 'asap'
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  // Update state accordingly when inputs are changed
+  handleChange(event) {
+    this.setState({[event.target.name]: event.target.value});
+  }
+
+  handleSubmit(event) {
+    // Get specific time if custom radio button is clicked
+    if (this.state.time == 'custom') {
+      var pickedTime = document.getElementsByClassName("rc-time-picker-15-minutes-input")[0].value;
+      this.state.time = pickedTime;
+    }
+    event.preventDefault();
+
+    // close the form and open the success page through finishPopup(), while passing args
+    this.props.finishPopup(this.state);
   }
   render() {
     return (
@@ -20,35 +49,35 @@ export default class ContactPopup extends React.Component {
           <h1>Contact the IT Help Desk</h1>
           <h3>Estimated wait time:</h3>
           <h2>6 Minutes</h2>
-          <form>
+          <form id ="contactForm" onSubmit={this.handleSubmit}>
 
             <div className="ContactInput">
               <span>N-Number:</span>
-              <input type="text" name="n-number"/>
+              <input type="text" name="number" value={this.state.number} onChange={this.handleChange}/>
             </div>
 
             <div className="ContactInput">
               <span>Callback #:</span>
-              <input type="text" name="callback"/>
+              <input type="text" name="callback" value={this.state.callback} onChange={this.handleChange}/>
             </div>
 
             <div className="ContactInput ContactSummary">
               <span>Summary of Issue:</span>
-              <textarea type="text" name="summary"/>
+              <textarea type="text" name="summary" value={this.state.summary} onChange={this.handleChange}/>
             </div>
 
             <div className="ContactInput">
               <span>Urgency:</span>
               <div className="ContactUrgencyInput">
-                <input type="radio" name="urgency" value="high"/>
+                <input type="radio" name="urgency" value="high" onClick={this.handleChange}/>
                 <span>High</span>
               </div>
               <div className="ContactUrgencyInput">
-                <input type="radio" name="urgency" value="med"/>
+                <input type="radio" name="urgency" value="med" onClick={this.handleChange}/>
                 <span>Med</span>
               </div>
               <div className="ContactUrgencyInput">
-                <input type="radio" name="urgency" value="low" defaultChecked/>
+                <input type="radio" name="urgency" value="low" onClick={this.handleChange} defaultChecked/>
                 <span>Low</span>
               </div>
             </div>
@@ -57,24 +86,24 @@ export default class ContactPopup extends React.Component {
               <span>Callback Time:</span>
               <div className="ContactTime">
                 <div className="ContactTimeInput">
-                  <input type="radio" name="callback" value="asap" defaultChecked/>
+                  <input type="radio" name="time" value="asap" onClick={this.handleChange} defaultChecked/>
                   <span>ASAP</span>
                 </div>
                 <div className="ContactTimeInput">
-                  <input type="radio" name="callback" value="custom"/>
-                    <TimePicker
-                      showSecond={false}
-                      defaultValue={moment()}
-                      className="ContactTimePicker"
-                      onChange={this.onChange}
-                      format={'h:mm a'}
-                      use12Hours />
+                  <input type="radio" name="time" value="custom" onClick={this.handleChange}/>
+                  <TimePicker
+                    id="timePicker"
+                    showSecond={false}
+                    defaultValue={moment()}
+                    className="ContactTimePicker"
+                    format={'h:mm a'}
+                    use12Hours />
                 </div>
               </div>
             </div>
 
             <br/><br/><br/>
-            <input type="submit" value="Submit Request" className="ContactButton" onClick={this.props.finishPopup}/>
+            <input type="submit" value="Submit Request" className="ContactButton"/>
           </form>
         </div>
       </div>
