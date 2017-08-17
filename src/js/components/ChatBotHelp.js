@@ -1,6 +1,6 @@
 import React from 'react';
 import ChatBot from 'react-simple-chatbot';
-import '../../css/components/ChatBotHelp.css';
+import icon from '../../media/helpdeskagent.png';
 import { ThemeProvider } from 'styled-components';
 
 
@@ -25,7 +25,7 @@ const steps = [
         id: '2',
         options: [
           { value: 1, label: 'Password', trigger: '4' },
-          { value: 2, label: 'RSA Token', trigger: '3' },
+          { value: 2, label: 'RSA Token', trigger: '6' },
           { value: 3, label: 'Skype', trigger: '7' },
         ],
       },
@@ -74,7 +74,9 @@ export default class ChatBotHelp extends React.Component {
       <div class="ChatBotHelp">
         <ThemeProvider theme={theme}>
           <ChatBot floating={true}
-          steps={steps} />
+          steps={steps}
+          hideUserAvatar={true}
+          botAvatar={icon}/>
         </ThemeProvider>
       </div>
     );
