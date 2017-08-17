@@ -1,19 +1,26 @@
 import React from 'react';
-import icon from '../../../media/Hardware-Icon.png';
 
-export default class HardwareCard extends React.Component {
+import { Link } from 'react-router-dom';
+
+import icon from '../../../media/BuildingAccess-Icon.png';
+
+export default class BuildingAccessCard extends React.Component {
   render() {
     return (
+
       <div className="Card">
+
         <div className="CardTitle">
-          Hardware Help
+          Building Access
         </div>
         <div className="CardContainer">
           <div className="CardIcon">
             <img src={icon}></img>
           </div>
+          </div>
         </div>
-      </div>
+
+
     );
   }
 }

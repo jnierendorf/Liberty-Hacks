@@ -12,12 +12,6 @@ export default class RsaCard extends React.Component {
           <div className="CardIcon">
             <img src={icon}></img>
           </div>
-          <div className="CardContent">
-            <ul>
-              <li>Request or change your RSA token</li>
-              <li>Request or change RSA pin</li>
-            </ul>
-          </div>
         </div>
       </div>
     );

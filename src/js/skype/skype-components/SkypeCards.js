@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 export default class SkypeCards extends React.Component {
   render() {
     return (
-      <div className="Cards">
+      <div className="DrilldownCards">
         <SkypeChangeAddPic />
         <Link to='/skype/wontlaunch'><SkypeWontLaunch /></Link>
         <SkypeTroubleshooting />

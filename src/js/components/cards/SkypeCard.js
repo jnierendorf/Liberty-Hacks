@@ -15,16 +15,7 @@ export default class SkypeCard extends React.Component {
         </div>
         <div className="CardContainer">
           <div className="CardIcon">
-            <img src={icon} height="100%" width="100%"></img>
-          </div>
-          <div className="CardContent">
-
-            <ul>
-
-              <li>Audio</li>
-              <li>Video</li>
-              <li>Instant-message</li>
-            </ul>
+            <img src={icon}></img>
           </div>
           </div>
         </div>

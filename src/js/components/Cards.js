@@ -6,6 +6,9 @@ import OutlookCard from './cards/OutlookCard';
 import PhoneCard from './cards/PhoneCard';
 import HardwareCard from './cards/HardwareCard';
 import SkypeCard from './cards/SkypeCard';
+import BenefitsCard from './cards/BenefitsCard';
+import BuildingAccessCard from './cards/BuildingAccessCard';
+
 
 import '../../css/components/Cards.css';
 
@@ -22,6 +25,8 @@ export default class Cards extends React.Component {
         <PhoneCard />
         <HardwareCard />
         <Link to='/skype'><SkypeCard /></Link>
+        <BenefitsCard/>
+        <BuildingAccessCard/>
       </div>
     );
   }

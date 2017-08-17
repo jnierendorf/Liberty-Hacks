@@ -13,13 +13,6 @@ export default class PasswordCard extends React.Component {
           <div className="CardIcon">
             <img src={icon}></img>
           </div>
-          <div className="CardContent">
-            <ul>
-              <li>Reset your password!!!</li>
-              <li>Unlock your account</li>
-              <li>Change security questions</li>
-            </ul>
-          </div>
         </div>
       </div>
     );
