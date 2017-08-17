@@ -26,7 +26,7 @@ const steps = [
         options: [
           { value: 1, label: 'Password', trigger: '4' },
           { value: 2, label: 'RSA Token', trigger: '3' },
-          { value: 3, label: 'Skype', trigger: '3' },
+          { value: 3, label: 'Skype', trigger: '7' },
         ],
       },
       {
@@ -52,6 +52,20 @@ const steps = [
         message: 'OK! We\'ll be right on it!',
         end: true,
       },
+      {
+        id: '7',
+        message: 'OK! How can I help you with Skype?',
+        trigger: '8',
+      },
+      {
+        id: '8',
+        options: [
+          { value: 1, label: 'I want to change or add a profile picture to Skype.', trigger: '6'},
+          { value: 2, label: 'Skype doesn\'t launch when I turn on my computer.', trigger: '6' },
+          { value: 3, label: 'Other', trigger: '6' },
+        ],
+      },
+
 ]
 
 export default class ChatBotHelp extends React.Component {
@@ -59,7 +73,8 @@ export default class ChatBotHelp extends React.Component {
     return (
       <div class="ChatBotHelp">
         <ThemeProvider theme={theme}>
-          <ChatBot steps={steps} />
+          <ChatBot floating={true}
+          steps={steps} />
         </ThemeProvider>
       </div>
     );
