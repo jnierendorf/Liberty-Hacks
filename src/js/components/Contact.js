@@ -5,6 +5,7 @@ import '../../css/components/Contact.css';
 
 import ContactPopup from './ContactPopup';
 import ContactSuccess from './ContactSuccess';
+import ContactConfirmation from './ContactConfirmation';
 
 export default class Contact extends React.Component {
   constructor() {
@@ -12,6 +13,7 @@ export default class Contact extends React.Component {
     this.state = {
       showPopup: false,
       showSuccess: false,
+      showConfirmation: false,
       info: null
     };
   }
@@ -30,7 +32,8 @@ export default class Contact extends React.Component {
   toggleBack() {
     this.setState({
       showPopup: false,
-      showSuccess: false
+      showSuccess: false,
+      showConfirmation: true
     });
 
     var callbackInfo = this.state.info;
@@ -46,7 +49,12 @@ export default class Contact extends React.Component {
       </ul>
     </div>;
 
-    ReactDOM.render(callbackInfoElement, document.getElementById("callback"));
+    console.log(document.getElementById("ConfirmationDetails"));
+  }
+  toggleConfirmation() {
+    this.setState({
+      showConfirmation: false
+    });
   }
   render() {
     return (
@@ -65,8 +73,14 @@ export default class Contact extends React.Component {
           />
           : null
         }
-
-        <div id="callback"></div>
+        {this.state.showConfirmation ?
+          <ContactConfirmation
+            closePopup={this.toggleConfirmation.bind(this)}
+            time={this.state.info.time}
+            callback={this.state.info.callback}
+          />
+          : null
+        }
       </div>
     );
   }

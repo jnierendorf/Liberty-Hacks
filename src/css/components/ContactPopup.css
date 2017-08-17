@@ -13,7 +13,7 @@
 .Popup {
   position: absolute;
   width: 100%;
-  min-height: 101%;
+  min-height: 900px;
   top: 0;
   background-color: rgba(0,0,0, 0.5);
 }
@@ -21,7 +21,7 @@
 .PopupInner {
   position: relative;
   width: 600px;
-  height: 675px;
+  height: 700px;
   margin: 20px auto;
   background: white;
 }

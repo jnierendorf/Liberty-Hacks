@@ -1,0 +1,26 @@
+.ContactConfirmation {
+  margin: 8px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ConfirmationExit {
+  display: block;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  background-color: red;
+  margin: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.ConfirmationDetails {
+  text-align: left;
+  padding: 5px;
+  font-size: 18px;
+}
