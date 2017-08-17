@@ -4,6 +4,8 @@ import '../../css/components/Searchbar.css';
 
 import Autosuggest from 'react-autosuggest';
 
+import { Link } from 'react-router-dom';
+
 const people = [
   {
     name: 'Skype',
@@ -54,7 +56,7 @@ const people = [
     year: 1991
   },
   {
-    name: 'Skype stuff',
+    name: 'Skype wont launch',
     year: 1995
   },
   {
