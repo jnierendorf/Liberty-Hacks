@@ -12,13 +12,7 @@ export default class OutlookCard extends React.Component {
           <div className="CardIcon">
             <img src={icon}></img>
           </div>
-          <div className="CardContent">
-            <ul>
-              <li>Request badge photo</li>
-              <li>Create shared email</li>
-              <li>Out of Office request</li>
-            </ul>
-          </div>
+
         </div>
       </div>
     );

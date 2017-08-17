@@ -3,7 +3,8 @@
   margin-left: auto;
   margin-right: auto;
   margin: 100px;
-  align-items: center;
+text-align: center; 
+
 }
 
 body {
