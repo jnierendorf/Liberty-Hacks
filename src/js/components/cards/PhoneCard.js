@@ -12,12 +12,6 @@ export default class PhoneCard extends React.Component {
           <div className="CardIcon">
             <img src={icon}></img>
           </div>
-          <div className="CardContent">
-            <ul>
-              <li>Mobile app configuration</li>
-              <li>BYOD request</li>
-            </ul>
-          </div>
         </div>
       </div>
     );
