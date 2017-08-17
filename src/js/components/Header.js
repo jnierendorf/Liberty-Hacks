@@ -5,7 +5,7 @@ export default class Header extends React.Component {
     return (
       <div>
       <div className="Header">
-        <h1>Welcome to HelpHub</h1>
+        <h1>Welcome to HelpHub.</h1>
           <div className = "MiniHeader">
             <li>Hi User, what do you need help with today?</li>
           </div>

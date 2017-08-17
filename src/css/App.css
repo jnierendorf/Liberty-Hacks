@@ -4,11 +4,10 @@
   color: #002663;
   font-size: 2em;
   margin-top: 60px;
-  margin-bottom: 30px;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 1;
+  margin-bottom: 20px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   line-height: 40px;
 }
 
 .MiniHeader{
@@ -17,9 +16,8 @@
   font-size: x-large;
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 300; 
   line-height: 32px;
-  margin: 0 0 72px;
 }
 
 .Footer {
