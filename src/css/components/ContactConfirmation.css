@@ -24,3 +24,8 @@
   padding: 5px;
   font-size: 18px;
 }
+
+.ConfirmationDetails h3 {
+  text-align: center;
+  margin: 5px;
+}

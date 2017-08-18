@@ -35,26 +35,13 @@ export default class Contact extends React.Component {
       showSuccess: false,
       showConfirmation: true
     });
-
-    var callbackInfo = this.state.info;
-    // Create and render the callback information for the user to see
-    const callbackInfoElement =
-    <div id="callbackInfo">
-      <ul>
-        <li dangerouslySetInnerHTML={{__html: 'N-Number: ' + callbackInfo.number}} />
-        <li dangerouslySetInnerHTML={{__html: 'Callback number: ' + callbackInfo.callback}} />
-        <li dangerouslySetInnerHTML={{__html: 'Summary: ' + callbackInfo.summary}} />
-        <li dangerouslySetInnerHTML={{__html: 'Urgency: ' + callbackInfo.urgency}} />
-        <li dangerouslySetInnerHTML={{__html: 'Time: ' + callbackInfo.time}} />
-      </ul>
-    </div>;
-
-    console.log(document.getElementById("ConfirmationDetails"));
   }
   toggleConfirmation() {
     this.setState({
       showConfirmation: false
     });
+
+    alert("Call has been cancelled.");
   }
   render() {
     return (

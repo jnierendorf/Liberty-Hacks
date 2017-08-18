@@ -13,7 +13,7 @@
 .Popup {
   position: absolute;
   width: 100%;
-  min-height: 900px;
+  height: 100%;
   top: 0;
   background-color: rgba(0,0,0, 0.5);
 }
