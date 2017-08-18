@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
         <ChatBotHelp />
       </div>
       <div className="Footer">
-        <p>Help Desk: 1-888-877-2255</p>
+        <p>1-888-877-2255</p>
       </div>
       </div>
     );
