@@ -2,6 +2,7 @@ import React from 'react';
 
 import Searchbar from './Searchbar';
 import Contact from './Contact';
+import ChatBotHelp from './ChatBotHelp';
 
 export default class Footer extends React.Component {
   render() {
@@ -10,6 +11,7 @@ export default class Footer extends React.Component {
       <div>
         <Searchbar />
         <Contact />
+        <ChatBotHelp />
       </div>
       <div className="Footer">
         <p>Help Desk: 1-888-877-2255</p>
