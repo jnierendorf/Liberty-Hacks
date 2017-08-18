@@ -11,7 +11,7 @@ export default class BenefitsCard extends React.Component {
       <div className="Card">
 
         <div className="CardTitle">
-          Benefits Support
+          Benefits
         </div>
         <div className="CardContainer">
           <div className="CardIcon">

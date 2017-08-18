@@ -13,9 +13,7 @@ export default class SkypeChangeAddPic extends React.Component {
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
-            <ul>
-              <li>I want to change or add a profile picture to Skype</li>
-            </ul>
+              Change or add a profile picture to Skype
           </div>
         </div>
       </div>

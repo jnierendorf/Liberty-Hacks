@@ -13,9 +13,7 @@ export default class SkypeWontLaunch extends React.Component {
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
-            <ul>
-              <li>Skype doesn&#39;t launch when I turn on my computer.</li>
-            </ul>
+            Skype doesn&#39;t launch when I turn on my computer
           </div>
         </div>
       </div>

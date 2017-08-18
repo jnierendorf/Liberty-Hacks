@@ -1,40 +1,27 @@
 .DrilldownCards {
   width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .DrilldownCard {
-  width: 200px;
+  width: 285px;
   display: inline-block;
   vertical-align: top;
   border:1px solid #b0b1b2;
   margin: 20px 23px;
-  height: 120px;
+  height: 150px;
   border-radius: 5px;
-}
-
-.DrilldownCardTitle {
-  font-size: 24px;
-  padding: 10px 0px;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  line-height: 32px;
-  margin: 0 0 1px;
+  position: relative;
 }
 
 .DrilldownCardContainer {
-  width: 100%;
+  margin-top: 10px;
 }
 
 .DrilldownCardIcon {
-  width: 30%;
   text-align: center;
   position: relative;
-  margin-top: 10px;
-  margin-right:2%;
+  margin-top: 0;
     display:inline;
 
 }
@@ -45,8 +32,12 @@
 }
 
 .DrilldownCardContent {
-  float: right;
-  width: 70%;
-  margin-top: 10px;
+  float: left;
   white-space: wrap;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 265px;
+  bottom: 0;
+  position: absolute;
 }

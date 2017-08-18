@@ -1,13 +1,16 @@
+a {
+  color: black;
+}
 
 .Header {
   text-align: center;
   color: #002663;
-  font-size: 2em;
-  margin-top: 60px;
-  margin-bottom: 20px;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 300;
-   line-height: 40px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 300;
+ line-height: 40px;
 }
 
 .MiniHeader{
@@ -16,7 +19,7 @@
   font-size: x-large;
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; 
+  font-weight: 300;
   line-height: 32px;
 }
 
@@ -32,6 +35,5 @@
 
 .BackButton {
   margin-left: 150px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  position: absolute;
 }

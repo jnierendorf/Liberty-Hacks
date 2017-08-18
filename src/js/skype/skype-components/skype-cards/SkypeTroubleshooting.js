@@ -12,10 +12,8 @@ export default class SkypeTroubleshooting extends React.Component {
           <div className="DrilldownCardIcon">
             <img src={icon}></img>
           </div>
-          <div className="DrilldownCardContent ">
-            <ul>
-              <li>Troubleshooting</li>
-            </ul>
+          <div className="DrilldownCardContent">
+            Troubleshooting
           </div>
         </div>
       </div>
