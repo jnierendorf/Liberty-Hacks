@@ -17,7 +17,7 @@ export default class SkypePageWontLaunch extends Component {
         <SkypeHeader />
         <SkypeContent />
         <div className='ScriptExit'>
-          <Link to='../skype'>x</Link>
+          <Link to='../skype'>X</Link>
         </div>
         <SkypeWontLaunchScript />
         <Footer />
