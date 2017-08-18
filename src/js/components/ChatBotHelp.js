@@ -2,6 +2,7 @@ import React from 'react';
 import ChatBot from 'react-simple-chatbot';
 import icon from '../../media/helpdeskagent.png';
 import { ThemeProvider } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 const theme = {
@@ -61,11 +62,15 @@ const steps = [
         id: '8',
         options: [
           { value: 1, label: 'I want to change or add a profile picture to Skype.', trigger: '6'},
-          { value: 2, label: 'Skype doesn\'t launch when I turn on my computer.', trigger: '6' },
+          { value: 2, label: 'Skype doesn\'t launch when I turn on my computer.', trigger: '9' },
           { value: 3, label: 'Other', trigger: '6' },
         ],
       },
-
+      {
+      id: '9',
+      message: 'Hm, I think I found something -',
+      end: true,
+      },
 ]
 
 export default class ChatBotHelp extends React.Component {
