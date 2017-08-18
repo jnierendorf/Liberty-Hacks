@@ -5,6 +5,7 @@ import '../../css/components/Contact.css';
 
 import ContactPopup from './ContactPopup';
 import ContactSuccess from './ContactSuccess';
+import ContactConfirmation from './ContactConfirmation';
 
 export default class Contact extends React.Component {
   constructor() {
@@ -12,6 +13,7 @@ export default class Contact extends React.Component {
     this.state = {
       showPopup: false,
       showSuccess: false,
+      showConfirmation: false,
       info: null
     };
   }
@@ -30,23 +32,16 @@ export default class Contact extends React.Component {
   toggleBack() {
     this.setState({
       showPopup: false,
-      showSuccess: false
+      showSuccess: false,
+      showConfirmation: true
+    });
+  }
+  toggleConfirmation() {
+    this.setState({
+      showConfirmation: false
     });
 
-    var callbackInfo = this.state.info;
-    // Create and render the callback information for the user to see
-    const callbackInfoElement =
-    <div id="callbackInfo">
-      <ul>
-        <li dangerouslySetInnerHTML={{__html: 'N-Number: ' + callbackInfo.number}} />
-        <li dangerouslySetInnerHTML={{__html: 'Callback number: ' + callbackInfo.callback}} />
-        <li dangerouslySetInnerHTML={{__html: 'Summary: ' + callbackInfo.summary}} />
-        <li dangerouslySetInnerHTML={{__html: 'Urgency: ' + callbackInfo.urgency}} />
-        <li dangerouslySetInnerHTML={{__html: 'Time: ' + callbackInfo.time}} />
-      </ul>
-    </div>;
-
-    ReactDOM.render(callbackInfoElement, document.getElementById("callback"));
+    alert("Call has been cancelled.");
   }
   render() {
     return (
@@ -65,8 +60,14 @@ export default class Contact extends React.Component {
           />
           : null
         }
-
-        <div id="callback"></div>
+        {this.state.showConfirmation ?
+          <ContactConfirmation
+            closePopup={this.toggleConfirmation.bind(this)}
+            time={this.state.info.time}
+            callback={this.state.info.callback}
+          />
+          : null
+        }
       </div>
     );
   }
