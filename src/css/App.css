@@ -35,6 +35,5 @@ a {
 
 .BackButton {
   margin-left: 150px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  position: absolute;
 }
