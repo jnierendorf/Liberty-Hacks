@@ -6,7 +6,7 @@ export default class HardwareCard extends React.Component {
     return (
       <div className="Card">
         <div className="CardTitle">
-          Hardware Help
+          Hardware
         </div>
         <div className="CardContainer">
           <div className="CardIcon">

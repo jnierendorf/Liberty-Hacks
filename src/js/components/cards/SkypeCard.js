@@ -11,7 +11,7 @@ export default class SkypeCard extends React.Component {
       <div className="Card">
 
         <div className="CardTitle">
-          Skype/Lync Help
+          Skype/Lync
         </div>
         <div className="CardContainer">
           <div className="CardIcon">
