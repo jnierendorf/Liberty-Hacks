@@ -6,9 +6,12 @@ import './index.css';
 import App from './js/App';
 import Skype1 from './js/skype/Skype1.js';
 import SkypePageWontLaunch from './js/skype/SkypePageWontLaunch.js';
+import Password1 from './js/password/Password1.js';
+import PasswordChangePassword from './js/password/PasswordChangePassword.js';
+import PasswordChangePreferences from './js/password/PasswordChangePreferences.js';
+import Outlook1 from './js/outlook/Outlook1.js';
 import SkypePageChangeAddPic from './js/skype/SkypePageChangeAddPic.js';
 import OutlookPageChangeAddPic from './js/outlook/OutlookPageChangeAddPic.js';
-import Outlook1 from './js/outlook/Outlook1.js';
 
 var Home = React.createClass({
   render: function() {
@@ -28,6 +31,9 @@ ReactDOM.render(
     <Route exact path='/skype/wontlaunch' component={SkypePageWontLaunch} />
     <Route exact path='/skype/changeaddpic' component={SkypePageChangeAddPic} />
     <Route exact path='/outlook' component={Outlook1} />
+    <Route exact path='/password' component={Password1} />
+    <Route exact path='/password/changepassword' component={PasswordChangePassword} />
+    <Route exact path='/password/changepreferences' component={PasswordChangePreferences} />
     <Route exact path='/outlook/changeaddpic' component={OutlookPageChangeAddPic} />
   </Switch>
 </HashRouter>,
