@@ -7,6 +7,7 @@ import App from './js/App';
 import Skype1 from './js/skype/Skype1.js';
 import SkypePageWontLaunch from './js/skype/SkypePageWontLaunch.js';
 import SkypePageChangeAddPic from './js/skype/SkypePageChangeAddPic.js';
+import OutlookPageChangeAddPic from './js/outlook/OutlookPageChangeAddPic.js';
 import Outlook1 from './js/outlook/Outlook1.js';
 
 var Home = React.createClass({
@@ -27,6 +28,7 @@ ReactDOM.render(
     <Route exact path='/skype/wontlaunch' component={SkypePageWontLaunch} />
     <Route exact path='/skype/changeaddpic' component={SkypePageChangeAddPic} />
     <Route exact path='/outlook' component={Outlook1} />
+    <Route exact path='/outlook/changeaddpic' component={OutlookPageChangeAddPic} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')
