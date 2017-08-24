@@ -1,8 +1,9 @@
 import React from 'react';
 import ChatBot from 'react-simple-chatbot';
-import icon from '../../media/helpdeskagent.png';
+import icon from '../../media/helpdeskagent1.png';
 import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-router-dom';
+import swlicon from '../../media/skypewontlaunch.png';
 
 
 const theme = {
@@ -69,8 +70,45 @@ const steps = [
       {
       id: '9',
       message: 'Hm, I think I found something -',
-      end: true,
+      trigger: '10',
       },
+      {
+      id: '10',
+        component: (
+          <div className='ChatBotComponent'>
+            <Link to='skype/wontlaunch' target="_blank"><img src={swlicon} height="80px"></img></Link>
+        </div>
+        ),
+      trigger: '11',
+    },
+    {
+    id: '11',
+    message: 'Did this resolve your issue?',
+    trigger: '12',
+    },
+    {
+    id: '12',
+    options: [
+      { value: 1, label: 'Yes. Thank you!', trigger: '13'},
+      { value: 2, label: 'No', trigger: '14' },
+    ],
+    },
+    {
+    id: '13',
+    message: 'My Pleasure! If you have any more questions please don\'t hesitate to ask.',
+    trigger: '14',
+    },
+    {
+    id: '14',
+    options: [
+      { value: 1, label: 'I have another question', trigger: '15'},
+    ],
+    },
+    {
+      id: '15',
+      message: 'What can I help you with?',
+      trigger: '2',
+    },
 ]
 
 export default class ChatBotHelp extends React.Component {
@@ -81,7 +119,8 @@ export default class ChatBotHelp extends React.Component {
           <ChatBot floating={true}
           steps={steps}
           hideUserAvatar={true}
-          botAvatar={icon}/>
+          botAvatar={icon}
+          headerTitle={"Lee - Help Desk Agent"}/>
         </ThemeProvider>
       </div>
     );
