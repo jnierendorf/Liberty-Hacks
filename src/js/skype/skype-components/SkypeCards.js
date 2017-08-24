@@ -14,9 +14,9 @@ export default class SkypeCards extends React.Component {
   render() {
     return (
       <div className="DrilldownCards">
-        <SkypeChangeAddPic />
+        <Link to='/skype/changeaddpic'><SkypeChangeAddPic /></Link>
         <Link to='/skype/wontlaunch'><SkypeWontLaunch /></Link>
-        <SkypeTroubleshooting />
+        <a href="https://libertymutual-ss.rightanswers.com/portal/app/portlets/results/viewsolution.jsp?solutionid=151005105540188&SToken=20F998D7349E1C534B7695DA6E155ABF" target="_blank"><SkypeTroubleshooting /></a>
       </div>
     );
   }

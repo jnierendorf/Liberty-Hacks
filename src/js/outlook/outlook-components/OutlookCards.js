@@ -11,7 +11,7 @@ export default class OutlookCards extends React.Component {
   render() {
     return (
       <div className="Cards">
-        <ChangeOutlookPic />
+        <Link to='/outlook/changeaddpic'><ChangeOutlookPic /></Link>
       </div>
     );
   }

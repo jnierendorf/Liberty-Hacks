@@ -15,7 +15,7 @@ export default class PasswordCards extends React.Component {
   render() {
     return (
       <div className="DrilldownCards">
-        <a href="https://mypassword.lmig.com/welcome"><PasswordMyPassword /></a>
+        <a href="https://mypassword.lmig.com/welcome" target="_blank"><PasswordMyPassword /></a>
         <Link to='/password/changepassword'><PasswordChangePassword /></Link>
         <Link to='/password/changepreferences'><PasswordChangePreferences /></Link>
       </div>
