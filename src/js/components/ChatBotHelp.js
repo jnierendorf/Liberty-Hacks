@@ -4,6 +4,7 @@ import icon from '../../media/helpdeskagent1.png';
 import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-router-dom';
 import swlicon from '../../media/skypewontlaunch.png';
+import scaicon from '../../media/skypechangeadd.png';
 
 
 const theme = {
@@ -62,7 +63,7 @@ const steps = [
       {
         id: '8',
         options: [
-          { value: 1, label: 'I want to change or add a profile picture to Skype.', trigger: '6'},
+          { value: 1, label: 'I want to change or add a profile picture to Skype.', trigger: '16'},
           { value: 2, label: 'Skype doesn\'t launch when I turn on my computer.', trigger: '9' },
           { value: 3, label: 'Other', trigger: '6' },
         ],
@@ -105,10 +106,24 @@ const steps = [
     ],
     },
     {
-      id: '15',
-      message: 'What can I help you with?',
-      trigger: '2',
+    id: '15',
+    message: 'What can I help you with?',
+    trigger: '2',
     },
+    {
+    id: '16',
+    message: 'Hm, I think I know what you\'re looking for',
+    trigger: '17',
+    },
+    {
+    id: '17',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='skype/changeaddpic' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    }
 ]
 
 export default class ChatBotHelp extends React.Component {

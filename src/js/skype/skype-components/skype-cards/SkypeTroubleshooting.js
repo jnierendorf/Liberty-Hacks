@@ -13,7 +13,7 @@ export default class SkypeTroubleshooting extends React.Component {
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
-            Troubleshooting
+            Skype For Business Resource Center
           </div>
         </div>
       </div>
