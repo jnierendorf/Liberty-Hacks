@@ -14,7 +14,7 @@ export default class SkypeCards extends React.Component {
   render() {
     return (
       <div className="DrilldownCards">
-        <SkypeChangeAddPic />
+        <Link to='/skype/changeaddpic'><SkypeChangeAddPic /></Link>
         <Link to='/skype/wontlaunch'><SkypeWontLaunch /></Link>
         <SkypeTroubleshooting />
       </div>

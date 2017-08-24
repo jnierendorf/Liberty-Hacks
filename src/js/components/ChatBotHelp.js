@@ -90,7 +90,7 @@ const steps = [
     id: '12',
     options: [
       { value: 1, label: 'Yes. Thank you!', trigger: '13'},
-      { value: 2, label: 'No', trigger: '14' },
+      { value: 2, label: 'No', trigger: '15' },
     ],
     },
     {
