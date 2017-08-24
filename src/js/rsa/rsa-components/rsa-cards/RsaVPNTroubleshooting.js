@@ -1,6 +1,6 @@
 import React from 'react';
 
-import icon from '../../../../media/security-questions.png';
+import icon from '../../../../media/trouble.png';
 import '../../../../css/components/DrilldownCards.css';
 
 
