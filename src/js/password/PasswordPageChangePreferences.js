@@ -4,12 +4,12 @@ import '../../css/components/Scripts.css';
 
 import PasswordContent from './password-components/PasswordContent';
 import PasswordHeader from './password-components/PasswordHeader';
-import PasswordChangePasswordScript from './password-components/password-scripts/PasswordChangePasswordScript';
+import PasswordChangePreferencesScript from './password-components/password-scripts/PasswordChangePreferencesScript';
 import Footer from '../components/Footer';
 
 import { Link } from 'react-router-dom';
 
-export default class PasswordChangePassword extends Component {
+export default class PasswordPageChangePreferences extends Component {
   render() {
     return (
       <div>
@@ -19,7 +19,7 @@ export default class PasswordChangePassword extends Component {
         <div className='ScriptExit'>
           <Link to='../password'>X</Link>
         </div>
-        <PasswordChangePasswordScript />
+        <PasswordChangePreferencesScript />
         <Footer />
       </div>
     );
