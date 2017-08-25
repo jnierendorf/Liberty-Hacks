@@ -17,7 +17,7 @@ export default class PhonePageSkypeAndroid extends Component {
         <PhoneHeader />
         <PhoneContent />
         <div className='ScriptExit'>
-          <Link to='../rsa'>X</Link>
+          <Link to='../phone'>X</Link>
         </div>
         <PhoneSkypeAndroidScript />
         <Footer />
