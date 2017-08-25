@@ -19,6 +19,7 @@ import RsaPageVPNConnect from './js/rsa/RsaPageVPNConnect.js';
 import RsaPageVPNTroubleshooting from './js/rsa/RsaPageVPNTroubleshooting.js';
 import Hardware1 from './js/hardware/Hardware1.js';
 import HardwarePagePrepareNewComp from './js/hardware/HardwarePagePrepareNewComp.js';
+import PageBuysmart from './js/hardware/PageBuysmart.js';
 import Phone1 from './js/phone/Phone1.js';
 import PhonePageSecure from './js/phone/PhonePageSecure.js';
 import PhonePageSkypeApple from './js/phone/PhonePageSkypeApple.js';
@@ -60,6 +61,7 @@ ReactDOM.render(
     <Route exact path='/phone/skypeandroid' component={PhonePageSkypeAndroid} />
     <Route exact path='/hardware' component={Hardware1} />
     <Route exact path='/hardware/preparenewcomp' component={HardwarePagePrepareNewComp} />
+    <Route exact path='/hardware/buysmart' component={PageBuysmart} />
     <Route exact path='/benefits' component={Benefits1} />
   </Switch>
 </HashRouter>,
