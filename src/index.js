@@ -19,6 +19,10 @@ import RsaPageVPNConnect from './js/rsa/RsaPageVPNConnect.js';
 import RsaPageVPNTroubleshooting from './js/rsa/RsaPageVPNTroubleshooting.js';
 import Hardware1 from './js/hardware/Hardware1.js';
 import HardwarePagePrepareNewComp from './js/hardware/HardwarePagePrepareNewComp.js';
+import Phone1 from './js/phone/Phone1.js';
+import PhonePageSecure from './js/phone/PhonePageSecure.js';
+import PhonePageSkypeApple from './js/phone/PhonePageSkypeApple.js';
+import PhonePageSkypeAndroid from './js/phone/PhonePageSkypeAndroid.js';
 
 var Home = React.createClass({
   render: function() {
@@ -47,6 +51,12 @@ ReactDOM.render(
     <Route exact path='/rsa/unabletoconnect' component={RsaPageUnableToConnect} />
     <Route exact path='/rsa/vpnconnect' component={RsaPageVPNConnect} />
     <Route exact path='/rsa/vpntroubleshooting' component={RsaPageVPNTroubleshooting} />
+    <Route exact path='/outlook/changeaddpic' component={OutlookPageChangeAddPic} />
+    <Route exact path='/outlook/oooreply' component={OutlookPageOOOReply} />
+    <Route exact path='/phone' component={Phone1} />
+    <Route exact path='/phone/secure' component={PhonePageSecure} />
+    <Route exact path='/phone/skypeapple' component={PhonePageSkypeApple} />
+    <Route exact path='/phone/skypeandroid' component={PhonePageSkypeAndroid} />
     <Route exact path='/hardware' component={Hardware1} />
     <Route exact path='/hardware/preparenewcomp' component={HardwarePagePrepareNewComp} />
   </Switch>
