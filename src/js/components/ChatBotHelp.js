@@ -31,6 +31,7 @@ const steps = [
           { value: 1, label: 'Password', trigger: '4' },
           { value: 2, label: 'Remote Access', trigger: '24' },
           { value: 3, label: 'Skype', trigger: '7' },
+          { value: 4, label: 'Phone', trigger: '32' },
         ],
       },
       {
@@ -219,6 +220,61 @@ const steps = [
     component: (
       <div className='ChatBotComponent'>
         <Link to='rsa/vpntroubleshooting' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+      id: '32',
+      message: 'OK! How can I help you with your phone?',
+      trigger: '33',
+    },
+    {
+      id: '33',
+      options: [
+        { value: 1, label: 'Forgot secure apps passcode for my iPhone', trigger: '34'},
+        { value: 2, label: 'I want to install/configure skype for business mobile on my iPhone', trigger: '36' },
+        { value: 3, label: 'I want to install/configure skype for business mobile on android', trigger: '38' },
+      ],
+    },
+    {
+    id: '34',
+    message: 'Hm, I think I found something -',
+    trigger: '35',
+    },
+    {
+    id: '35',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='phone/secure' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+    id: '36',
+    message: 'Hm, I think I found something -',
+    trigger: '37',
+    },
+    {
+    id: '37',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='phone/skypeapple' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+    id: '38',
+    message: 'Hm, I think I found something -',
+    trigger: '39',
+    },
+    {
+    id: '39',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='phone/skypeandroid' target="_blank"><img src={scaicon} height="80px"></img></Link>
     </div>
     ),
     trigger: '11',
