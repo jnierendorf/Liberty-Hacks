@@ -17,7 +17,7 @@ export default class PhonePageSecure extends Component {
         <PhoneHeader />
         <PhoneContent />
         <div className='ScriptExit'>
-          <Link to='../rsa'>X</Link>
+          <Link to='../phone'>X</Link>
         </div>
         <PhoneSecureScript />
         <Footer />
