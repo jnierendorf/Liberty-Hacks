@@ -12,6 +12,7 @@ import PasswordChangePreferences from './js/password/PasswordChangePreferences.j
 import Outlook1 from './js/outlook/Outlook1.js';
 import SkypePageChangeAddPic from './js/skype/SkypePageChangeAddPic.js';
 import OutlookPageChangeAddPic from './js/outlook/OutlookPageChangeAddPic.js';
+import OutlookPageOOOReply from './js/outlook/OutlookPageOOOReply.js';
 
 var Home = React.createClass({
   render: function() {
@@ -35,6 +36,7 @@ ReactDOM.render(
     <Route exact path='/password/changepassword' component={PasswordChangePassword} />
     <Route exact path='/password/changepreferences' component={PasswordChangePreferences} />
     <Route exact path='/outlook/changeaddpic' component={OutlookPageChangeAddPic} />
+    <Route exact path='/outlook/oooreply' component={OutlookPageOOOReply} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')
