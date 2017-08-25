@@ -19,6 +19,7 @@ import RsaPageVPNConnect from './js/rsa/RsaPageVPNConnect.js';
 import RsaPageVPNTroubleshooting from './js/rsa/RsaPageVPNTroubleshooting.js';
 import Hardware1 from './js/hardware/Hardware1.js';
 import HardwarePagePrepareNewComp from './js/hardware/HardwarePagePrepareNewComp.js';
+import PageBuysmart from './js/hardware/PageBuysmart.js';
 
 var Home = React.createClass({
   render: function() {
@@ -49,6 +50,7 @@ ReactDOM.render(
     <Route exact path='/rsa/vpntroubleshooting' component={RsaPageVPNTroubleshooting} />
     <Route exact path='/hardware' component={Hardware1} />
     <Route exact path='/hardware/preparenewcomp' component={HardwarePagePrepareNewComp} />
+    <Route exact path='/hardware/buysmart' component={PageBuysmart} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')
