@@ -25,6 +25,7 @@ import PhonePageSecure from './js/phone/PhonePageSecure.js';
 import PhonePageSkypeApple from './js/phone/PhonePageSkypeApple.js';
 import PhonePageSkypeAndroid from './js/phone/PhonePageSkypeAndroid.js';
 import Benefits1 from './js/benefits/Benefits1.js';
+import BuildingAccess1 from './js/buildingaccess/BuildingAccess1.js';
 
 var Home = React.createClass({
   render: function() {
@@ -63,6 +64,7 @@ ReactDOM.render(
     <Route exact path='/hardware/preparenewcomp' component={HardwarePagePrepareNewComp} />
     <Route exact path='/hardware/buysmart' component={PageBuysmart} />
     <Route exact path='/benefits' component={Benefits1} />
+    <Route exact path='/buildingaccess' component={BuildingAccess1} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')

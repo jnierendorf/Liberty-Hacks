@@ -26,7 +26,7 @@ export default class Cards extends React.Component {
         <Link to='/hardware'><HardwareCard /></Link>
         <Link to='/skype'><SkypeCard /></Link>
         <Link to='/benefits'><BenefitsCard/></Link>
-        <BuildingAccessCard/>
+        <Link to='/buildingaccess'><BuildingAccessCard/></Link>
       </div>
     );
   }
