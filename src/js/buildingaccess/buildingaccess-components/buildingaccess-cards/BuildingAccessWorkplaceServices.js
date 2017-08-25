@@ -1,6 +1,6 @@
 import React from 'react';
 
-import icon from '../../../../media/Hardware-Icon.png';
+import icon from '../../../../media/BuildingAccess-Icon.png';
 import '../../../../css/components/DrilldownCards.css';
 
 export default class BuildingAccessWorkplaceServices extends React.Component {
