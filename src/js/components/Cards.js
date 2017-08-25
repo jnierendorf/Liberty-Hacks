@@ -20,7 +20,7 @@ export default class Cards extends React.Component {
     return (
       <div className="Cards">
         <Link to='/password'><PasswordCard /></Link>
-        <RsaCard />
+        <Link to='/rsa'><RsaCard /></Link>
         <Link to='/outlook'><OutlookCard /></Link>
         <PhoneCard />
         <HardwareCard />
