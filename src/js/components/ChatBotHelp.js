@@ -29,7 +29,7 @@ const steps = [
         id: '2',
         options: [
           { value: 1, label: 'Password', trigger: '4' },
-          { value: 2, label: 'RSA Token', trigger: '6' },
+          { value: 2, label: 'Remote Access', trigger: '24' },
           { value: 3, label: 'Skype', trigger: '7' },
         ],
       },
@@ -164,6 +164,61 @@ const steps = [
     component: (
       <div className='ChatBotComponent'>
         <Link to='password/changepreferences' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+      id: '24',
+      message: 'OK! How can I help you with Remote Access?',
+      trigger: '25',
+    },
+    {
+      id: '25',
+      options: [
+        { value: 1, label: 'I am unable to connect from a hotel or public Wifi', trigger: '26'},
+        { value: 2, label: 'I want to connect to VPN using Pulse Secure', trigger: '28' },
+        { value: 3, label: 'RSA VPN Troubleshooting', trigger: '30' },
+      ],
+    },
+    {
+    id: '26',
+    message: 'Hm, I think I found something -',
+    trigger: '27',
+    },
+    {
+    id: '27',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='rsa/unabletoconnect' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+    id: '28',
+    message: 'Hm, I think I found something -',
+    trigger: '29',
+    },
+    {
+    id: '29',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='rsa/vpnconnect' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+    id: '30',
+    message: 'Hm, I think I found something -',
+    trigger: '31',
+    },
+    {
+    id: '31',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='rsa/vpntroubleshooting' target="_blank"><img src={scaicon} height="80px"></img></Link>
     </div>
     ),
     trigger: '11',
