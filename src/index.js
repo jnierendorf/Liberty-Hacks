@@ -12,6 +12,7 @@ import PasswordPageChangePreferences from './js/password/PasswordPageChangePrefe
 import Outlook1 from './js/outlook/Outlook1.js';
 import SkypePageChangeAddPic from './js/skype/SkypePageChangeAddPic.js';
 import OutlookPageChangeAddPic from './js/outlook/OutlookPageChangeAddPic.js';
+import OutlookPageOOOReply from './js/outlook/OutlookPageOOOReply.js';
 import Rsa1 from './js/rsa/Rsa1.js';
 import RsaPageUnableToConnect from './js/rsa/RsaPageUnableToConnect.js';
 import RsaPageVPNConnect from './js/rsa/RsaPageVPNConnect.js';
@@ -43,6 +44,7 @@ ReactDOM.render(
     <Route exact path='/rsa/vpnconnect' component={RsaPageVPNConnect} />
     <Route exact path='/rsa/vpntroubleshooting' component={RsaPageVPNTroubleshooting} />
     <Route exact path='/outlook/changeaddpic' component={OutlookPageChangeAddPic} />
+    <Route exact path='/outlook/oooreply' component={OutlookPageOOOReply} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')
