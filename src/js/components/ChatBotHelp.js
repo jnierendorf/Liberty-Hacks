@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-router-dom';
 import swlicon from '../../media/skypewontlaunch.png';
 import scaicon from '../../media/skypechangeadd.png';
+import mpicon from '../../media/mypassword.png';
 
 
 const theme = {
@@ -45,9 +46,9 @@ const steps = [
       {
         id: '5',
         options: [
-          { value: 1, label: 'Reset your password?', trigger: '6'},
-          { value: 2, label: 'Unlock your account?', trigger: '6' },
-          { value: 3, label: 'Change security questions?', trigger: '6' },
+          { value: 1, label: 'access MyPassword?', trigger: '18'},
+          { value: 2, label: 'Change your enterprise ID password?', trigger: '20' },
+          { value: 3, label: 'Change your security questions and/or contact preferences?', trigger: '22' },
         ],
       },
       {
@@ -123,7 +124,50 @@ const steps = [
     </div>
     ),
     trigger: '11',
-    }
+    },
+    {
+    id: '18',
+    message: 'Try this:',
+    trigger: '17',
+    },
+    {
+    id: '19',
+    component: (
+      <div className='ChatBotComponent'>
+        <a href='https://mypassword.lmig.com/welcome/Start.aspx' target='_blank'><img src={mpicon} height="80px"></img></a>
+    </div>
+    ),
+    trigger: '11',
+
+    },
+    {
+    id: '20',
+    message: 'Hm, I think I know what you\'re looking for',
+    trigger: '21',
+    },
+    {
+    id: '21',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='password/changepassword' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
+    {
+    id: '22',
+    message: 'Hm, I think I know what you\'re looking for',
+    trigger: '23',
+    },
+    {
+    id: '23',
+    component: (
+      <div className='ChatBotComponent'>
+        <Link to='password/changepreferences' target="_blank"><img src={scaicon} height="80px"></img></Link>
+    </div>
+    ),
+    trigger: '11',
+    },
 ]
 
 export default class ChatBotHelp extends React.Component {
