@@ -17,6 +17,10 @@ import Rsa1 from './js/rsa/Rsa1.js';
 import RsaPageUnableToConnect from './js/rsa/RsaPageUnableToConnect.js';
 import RsaPageVPNConnect from './js/rsa/RsaPageVPNConnect.js';
 import RsaPageVPNTroubleshooting from './js/rsa/RsaPageVPNTroubleshooting.js';
+import Phone1 from './js/phone/Phone1.js';
+import PhonePageSecure from './js/phone/PhonePageSecure.js';
+import PhonePageSkypeApple from './js/phone/PhonePageSkypeApple.js';
+import PhonePageSkypeAndroid from './js/phone/PhonePageSkypeAndroid.js';
 
 var Home = React.createClass({
   render: function() {
@@ -45,6 +49,10 @@ ReactDOM.render(
     <Route exact path='/rsa/vpntroubleshooting' component={RsaPageVPNTroubleshooting} />
     <Route exact path='/outlook/changeaddpic' component={OutlookPageChangeAddPic} />
     <Route exact path='/outlook/oooreply' component={OutlookPageOOOReply} />
+    <Route exact path='/phone' component={Phone1} />
+    <Route exact path='/phone/secure' component={PhonePageSecure} />
+    <Route exact path='/phone/skypeapple' component={PhonePageSkypeApple} />
+    <Route exact path='/phone/skypeandroid' component={PhonePageSkypeAndroid} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')
