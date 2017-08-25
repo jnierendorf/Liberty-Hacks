@@ -1,6 +1,6 @@
 import React from 'react';
 
-import icon from '../../../../media/code.png';
+import icon from '../../../../media/buysmart.png';
 import '../../../../css/components/DrilldownCards.css';
 
 export default class Buysmart extends React.Component {
@@ -9,6 +9,7 @@ export default class Buysmart extends React.Component {
       <div className="DrilldownCard">
         <div className="DrilldownCardContainer">
           <div className="DrilldownCardIcon">
+            <br></br>
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
