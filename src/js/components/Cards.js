@@ -22,10 +22,10 @@ export default class Cards extends React.Component {
         <Link to='/password'><PasswordCard /></Link>
         <Link to='/rsa'><RsaCard /></Link>
         <Link to='/outlook'><OutlookCard /></Link>
-        <PhoneCard />
+        <Link to='/phone'><PhoneCard /></Link>
         <Link to='/hardware'><HardwareCard /></Link>
         <Link to='/skype'><SkypeCard /></Link>
-        <BenefitsCard/>
+        <Link to='/benefits'><BenefitsCard/></Link>
         <BuildingAccessCard/>
       </div>
     );
