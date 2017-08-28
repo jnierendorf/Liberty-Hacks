@@ -12,8 +12,14 @@ export default class ContactPopup extends React.Component {
   constructor(props) {
     super(props);
 
-    // Make page scroll to top so the form is visible
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    // Make page slide to top so the form is visible
+    var scrollStep = -window.scrollY / (300 / 15),
+    scrollInterval = setInterval(function(){
+    if ( window.scrollY != 0 ) {
+        window.scrollBy( 0, scrollStep );
+    }
+    else clearInterval(scrollInterval);
+    },15);
 
     // Set up state to be ready to collect form info
     this.state = {
