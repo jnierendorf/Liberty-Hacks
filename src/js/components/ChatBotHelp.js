@@ -33,6 +33,7 @@ const steps = [
           { value: 2, label: 'RSA Tokens & VPN', trigger: '24' },
           { value: 3, label: 'Skype/Lync', trigger: '7' },
           { value: 4, label: 'Mobile Phones', trigger: '32' },
+          { value: 5, label: 'Outlook', trigger: '42' },
         ],
       },
       {
@@ -293,6 +294,61 @@ const steps = [
       </div>
       ),
     trigger: '11',
+  },
+  {
+    id: '42',
+    message: 'OK! How can I help you with Outlook?',
+    trigger: '43',
+  },
+  {
+    id: '43',
+    options: [
+      { value: 1, label: 'I want to change or add a profile picture to Outlook.', trigger: '44'},
+      { value: 2, label: 'I want to turn on/off the Out of Office reply.', trigger: '46' },
+      { value: 3, label: 'I need help with Voicemail in Outlook Research Center', trigger: '48' },
+    ],
+  },
+  {
+  id: '44',
+  message: 'Ok, try this -',
+  trigger: '45',
+  },
+  {
+  id: '45',
+  component: (
+    <div className='ChatBotComponent'>
+      <Link to='outlook/changeaddpic' target="_blank"><img src={scaicon} height="80px"></img></Link>
+  </div>
+  ),
+  trigger: '11',
+  },
+  {
+  id: '46',
+  message: 'Hm, I think this is what you\'re looking for -',
+  trigger: '47',
+  },
+  {
+  id: '47',
+  component: (
+    <div className='ChatBotComponent'>
+      <Link to='outlook/oooreply' target="_blank"><img src={scaicon} height="80px"></img></Link>
+  </div>
+  ),
+  trigger: '11',
+  },
+  {
+  id: '48',
+  message: 'Give this a try -',
+  trigger: '49',
+  },
+  {
+  id: '49',
+  component: (
+    <div className='ChatBotComponent'>
+      <a href='https://libertymutual-ss.rightanswers.com/portal/app/portlets/results/viewsolution.jsp?solutionid=120920131732435&SToken=001CFBAEFE9E3A1F6AAF32C14E0974E7' target='_blank'><img src={sficon} height="80px"></img></a>
+  </div>
+  ),
+  trigger: '11',
   },
 ]
 
