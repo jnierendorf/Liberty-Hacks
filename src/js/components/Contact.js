@@ -1,6 +1,6 @@
 import 'velocity-animate';
 import 'velocity-animate/velocity.ui';
-import { VelocityTransitionGroup, velocityHelpers } from 'velocity-react';
+import { VelocityTransitionGroup } from 'velocity-react';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -66,6 +66,7 @@ export default class Contact extends React.Component {
           />
           : null
         }
+      <VelocityTransitionGroup enter={{animation: "fadeIn"}} leave={{animation: "fadeOut"}}>
         {this.state.showConfirmation ?
           <ContactConfirmation
             closePopup={this.toggleConfirmation.bind(this)}
@@ -74,6 +75,7 @@ export default class Contact extends React.Component {
           />
           : null
         }
+      </VelocityTransitionGroup>
       </div>
     );
   }
