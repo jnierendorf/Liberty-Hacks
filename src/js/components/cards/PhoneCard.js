@@ -6,7 +6,7 @@ export default class PhoneCard extends React.Component {
     return (
       <div className="Card">
         <div className="CardTitle">
-          Phone
+          Mobile Phones
         </div>
         <div className="CardContainer">
           <div className="CardIcon">

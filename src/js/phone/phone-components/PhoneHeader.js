@@ -9,7 +9,7 @@ export default class PhoneHeader extends React.Component {
     return (
       <div>
         <div className="Header">
-          <h1>How can we help you with your phone?</h1>
+          <h1>How can we help you with mobile phones?</h1>
         </div>
         <div className="BackButton">
           <Link to='../'><img src={icon} height="55px"></img></Link>

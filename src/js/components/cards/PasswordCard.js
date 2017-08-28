@@ -7,7 +7,7 @@ export default class PasswordCard extends React.Component {
     return (
       <div className="Card">
         <div className="CardTitle">
-          Password
+          ID's & Passwords
         </div>
         <div className="CardContainer">
           <div className="CardIcon">

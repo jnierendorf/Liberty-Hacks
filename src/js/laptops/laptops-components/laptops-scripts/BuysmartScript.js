@@ -9,7 +9,7 @@ export default class BuysmartScript extends React.Component {
       <ol>
 <li>Login to buySmart.</li>
 <li>On the left-hand side of the main buySmart page that displays, beneath the Common Action subject heading, click on Requisition.</li>
-<li>Under Shop by Category on the left hand side of your screen, navigate to Computers and IT equipment > Hardware and Peripherals.</li>
+<li>Under Shop by Category on the left hand side of your screen, navigate to Computers and IT equipment > Laptops and Peripherals.</li>
 <li>Prior to making your purchase decision, review the following table for Windows operating system compatibility.  Ensure that the device your purchase will support your required Windows operating system.</li>
 <li>Select the item you want to order, then click the product name to see a detailed description of the item.  If satisfied, click Add to Cart.
 TIP: To add additional items to you order, select ‘Continue Shopping’ at the top of the page and continue to add items into the cart.</li>
