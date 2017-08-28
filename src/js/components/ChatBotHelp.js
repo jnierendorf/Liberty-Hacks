@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import swlicon from '../../media/skypewontlaunch.png';
 import scaicon from '../../media/skypechangeadd.png';
 import mpicon from '../../media/mypassword.png';
+import sficon from '../../media/skypefaq.png';
 
 
 const theme = {
@@ -67,7 +68,7 @@ const steps = [
         options: [
           { value: 1, label: 'I want to change or add a profile picture to Skype.', trigger: '16'},
           { value: 2, label: 'Skype doesn\'t launch when I turn on my computer.', trigger: '9' },
-          { value: 3, label: 'Other', trigger: '6' },
+          { value: 3, label: 'Other', trigger: '40' },
         ],
       },
       {
@@ -279,6 +280,20 @@ const steps = [
     ),
     trigger: '11',
     },
+    {
+    id: '40',
+    message: 'Hm, give this a try -',
+    trigger: '41',
+    },
+    {
+    id: '41',
+      component: (
+        <div className='ChatBotComponent'>
+          <a href='https://libertymutual-ss.rightanswers.com/portal/app/portlets/results/viewsolution.jsp?solutionid=151005105540188&SToken=20F998D7349E1C534B7695DA6E155ABF' target='_blank'><img src={sficon} height="80px"></img></a>
+      </div>
+      ),
+    trigger: '11',
+  },
 ]
 
 export default class ChatBotHelp extends React.Component {
