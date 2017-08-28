@@ -1,3 +1,7 @@
+import 'velocity-animate';
+import 'velocity-animate/velocity.ui';
+import { VelocityTransitionGroup, velocityHelpers } from 'velocity-react';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -47,13 +51,15 @@ export default class Contact extends React.Component {
     return (
       <div className='Contact'>
         <button type="button" className='ContactButton' onClick={this.togglePopup.bind(this)}>Contact the IT Help Desk</button>
-        {this.state.showPopup ?
-          <ContactPopup
-            closePopup={this.togglePopup.bind(this)}
-            finishPopup={this.toggleSuccess.bind(this)}
-          />
-          : null
-        }
+        <VelocityTransitionGroup enter={{animation: "slideDown"}} leave={{animation: "slideUp"}}>
+          {this.state.showPopup ?
+            <ContactPopup
+              closePopup={this.togglePopup.bind(this)}
+              finishPopup={this.toggleSuccess.bind(this)}
+            />
+            : null
+          }
+      </VelocityTransitionGroup>
         {this.state.showSuccess ?
           <ContactSuccess
             closePopup={this.toggleBack.bind(this)}
