@@ -28,7 +28,7 @@ const people = [
     year: 2012
   },
   {
-    name: 'Hardware',
+    name: 'Laptops',
     year: 2009
   },
   {

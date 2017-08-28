@@ -1,6 +1,6 @@
 import React from 'react';
 
-import icon from '../../../../media/Hardware-Icon.png';
+import icon from '../../../../media/Laptops-Icon.png';
 import '../../../../css/components/DrilldownCards.css';
 
 export default class BenefitsYTR extends React.Component {

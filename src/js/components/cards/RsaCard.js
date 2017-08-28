@@ -6,7 +6,7 @@ export default class RsaCard extends React.Component {
     return (
       <div className="Card">
         <div className="CardTitle">
-          Remote Access
+          RSA Tokens & VPN
         </div>
         <div className="CardContainer">
           <div className="CardIcon">

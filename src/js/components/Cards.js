@@ -4,7 +4,7 @@ import PasswordCard from './cards/PasswordCard';
 import RsaCard from './cards/RsaCard';
 import OutlookCard from './cards/OutlookCard';
 import PhoneCard from './cards/PhoneCard';
-import HardwareCard from './cards/HardwareCard';
+import LaptopsCard from './cards/LaptopsCard';
 import SkypeCard from './cards/SkypeCard';
 import BenefitsCard from './cards/BenefitsCard';
 import BuildingAccessCard from './cards/BuildingAccessCard';
@@ -23,7 +23,7 @@ export default class Cards extends React.Component {
         <Link to='/rsa'><RsaCard /></Link>
         <Link to='/outlook'><OutlookCard /></Link>
         <Link to='/phone'><PhoneCard /></Link>
-        <Link to='/hardware'><HardwareCard /></Link>
+        <Link to='/laptops'><LaptopsCard /></Link>
         <Link to='/skype'><SkypeCard /></Link>
         <Link to='/benefits'><BenefitsCard/></Link>
         <Link to='/buildingaccess'><BuildingAccessCard/></Link>

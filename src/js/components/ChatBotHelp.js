@@ -29,10 +29,10 @@ const steps = [
       {
         id: '2',
         options: [
-          { value: 1, label: 'Password', trigger: '4' },
-          { value: 2, label: 'Remote Access', trigger: '24' },
-          { value: 3, label: 'Skype', trigger: '7' },
-          { value: 4, label: 'Phone', trigger: '32' },
+          { value: 1, label: 'ID\'s & Passwords', trigger: '4' },
+          { value: 2, label: 'RSA Tokens & VPN', trigger: '24' },
+          { value: 3, label: 'Skype/Lync', trigger: '7' },
+          { value: 4, label: 'Mobile Phones', trigger: '32' },
         ],
       },
       {
@@ -60,7 +60,7 @@ const steps = [
       },
       {
         id: '7',
-        message: 'OK! How can I help you with Skype?',
+        message: 'OK! How can I help you with Skype/Lync?',
         trigger: '8',
       },
       {
@@ -172,7 +172,7 @@ const steps = [
     },
     {
       id: '24',
-      message: 'OK! How can I help you with Remote Access?',
+      message: 'OK! How can I help you with RSA Tokens & VPN?',
       trigger: '25',
     },
     {
@@ -227,7 +227,7 @@ const steps = [
     },
     {
       id: '32',
-      message: 'OK! How can I help you with your phone?',
+      message: 'OK! How can I help you with your mobile phone?',
       trigger: '33',
     },
     {

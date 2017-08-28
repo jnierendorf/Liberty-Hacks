@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../../../../css/components/Scripts.css';
 
-export default class HardwarePrepareNewCompScript extends React.Component {
+export default class LaptopsPrepareNewCompScript extends React.Component {
   render() {
     return (
       <div className="Script">

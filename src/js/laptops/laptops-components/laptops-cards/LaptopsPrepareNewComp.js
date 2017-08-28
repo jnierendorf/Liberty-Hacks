@@ -1,9 +1,9 @@
 import React from 'react';
 
-import icon from '../../../../media/code.png';
+import icon from '../../../../media/Laptops-Icon.png';
 import '../../../../css/components/DrilldownCards.css';
 
-export default class HardwarePrepareNewComp extends React.Component {
+export default class LaptopsPrepareNewComp extends React.Component {
   render() {
     return (
       <div className="DrilldownCard">
@@ -12,7 +12,7 @@ export default class HardwarePrepareNewComp extends React.Component {
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
-            VDE & VDP Troubleshooting
+            Prepare your new or reimaged computer for the first time
           </div>
         </div>
       </div>

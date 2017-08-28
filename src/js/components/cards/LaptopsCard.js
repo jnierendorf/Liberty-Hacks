@@ -1,12 +1,12 @@
 import React from 'react';
-import icon from '../../../media/Hardware-Icon.png';
+import icon from '../../../media/Laptops-Icon.png';
 
-export default class HardwareCard extends React.Component {
+export default class LaptopsCard extends React.Component {
   render() {
     return (
       <div className="Card">
         <div className="CardTitle">
-          Hardware
+          Laptops
         </div>
         <div className="CardContainer">
           <div className="CardIcon">
