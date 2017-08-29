@@ -20,11 +20,18 @@ const theme = {
   userFontColor: '#4a4a4a',
 };
 
+const customersFirst = [
+
+
+]
+
+
 const steps = [
   {
         id: '1',
-        message: 'Hi user! What can I help you with?',
+        message: 'Hi Ned! What can I help you with?',
         trigger: '2',
+        trigger: 'customersFirst'
       },
       {
         id: '2',
@@ -350,6 +357,21 @@ const steps = [
   ),
   trigger: '11',
   },
+  {
+  id: 'customersFirst',
+  user: true,
+  trigger: '50',
+  },
+  {
+  id: '50',
+  message: 'OK, I will connect you with a CustomersFirst support resource right now.',
+  trigger: 'thankyou',
+  },
+  {
+  id: 'thankyou',
+  user: true,
+  trigger:13,
+  }
 ]
 
 export default class ChatBotHelp extends React.Component {
