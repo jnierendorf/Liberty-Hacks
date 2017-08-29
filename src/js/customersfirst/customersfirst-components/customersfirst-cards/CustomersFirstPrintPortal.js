@@ -1,6 +1,6 @@
 import React from 'react';
 
-import icon from '../../../../media/trouble.png';
+import icon from '../../../../media/lightbulb.png';
 import '../../../../css/components/DrilldownCards.css';
 
 
@@ -13,7 +13,7 @@ export default class CustomersFirstPrintPortal extends React.Component {
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
-            PrintPortal Helpful Hints
+            Print Portal Helpful Hints
           </div>
         </div>
       </div>

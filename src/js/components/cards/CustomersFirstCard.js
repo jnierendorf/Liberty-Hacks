@@ -1,5 +1,5 @@
 import React from 'react';
-import icon from '../../../media/phone-icon.png';
+import icon from '../../../media/customersfirst.png';
 
 export default class CustomersFirstCard extends React.Component {
   render() {

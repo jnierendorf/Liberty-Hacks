@@ -1,6 +1,6 @@
 import React from 'react';
 
-import icon from '../../../../media/RSA-icon.png';
+import icon from '../../../../media/money.png';
 import '../../../../css/components/DrilldownCards.css';
 
 
@@ -13,7 +13,7 @@ export default class CustomersFirstCFProperty extends React.Component {
             <img src={icon}></img>
           </div>
           <div className="DrilldownCardContent">
-            CFProperty Rates / Premium Concerns
+            CF Property: Rates / Premium Concerns
           </div>
         </div>
       </div>
