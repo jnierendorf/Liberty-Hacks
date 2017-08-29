@@ -26,6 +26,10 @@ import PhonePageSkypeApple from './js/phone/PhonePageSkypeApple.js';
 import PhonePageSkypeAndroid from './js/phone/PhonePageSkypeAndroid.js';
 import Benefits1 from './js/benefits/Benefits1.js';
 import BuildingAccess1 from './js/buildingaccess/BuildingAccess1.js';
+import CustomersFirst1 from './js/customersfirst/CustomersFirst1.js';
+import CustomersFirstPageApplicationAccess from './js/customersfirst/CustomersFirstPageApplicationAccess.js';
+import CustomersFirstPageCFProperty from './js/customersfirst/CustomersFirstPageCFProperty.js';
+import CustomersFirstPagePrintPortal from './js/customersfirst/CustomersFirstPagePrintPortal.js';
 
 var Home = React.createClass({
   render: function() {
@@ -65,6 +69,10 @@ ReactDOM.render(
     <Route exact path='/laptops/buysmart' component={PageBuysmart} />
     <Route exact path='/benefits' component={Benefits1} />
     <Route exact path='/buildingaccess' component={BuildingAccess1} />
+    <Route exact path='/customersfirst' component={CustomersFirst1} />
+    <Route exact path='/customersfirst/applicationaccess' component={CustomersFirstPageApplicationAccess} />
+    <Route exact path='/customersfirst/cfproperty' component={CustomersFirstPageCFProperty} />
+    <Route exact path='/customersfirst/printportal' component={CustomersFirstPagePrintPortal} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')
