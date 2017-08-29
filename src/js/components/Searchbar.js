@@ -9,59 +9,47 @@ import { Link } from 'react-router-dom';
 const people = [
   {
     name: 'Skype',
-    year: 1972
+    page: '/skype'
   },
   {
     name: 'Outlook',
-    year: 2000
+    page: '/outlook'
   },
   {
     name: 'Password',
-    year: 1983
+    page: '/password'
   },
   {
     name: 'RSA Token',
-    year: 2007
+    page: '/rsa'
   },
   {
     name: 'Lync',
-    year: 2012
+    page: '/skype'
   },
   {
     name: 'Laptops',
-    year: 2009
+    page: '/laptops'
   },
   {
     name: 'Badge',
-    year: 1990
-  },
-  {
-    name: 'Software',
-    year: 1995
-  },
-  {
-    name: 'Bob',
-    year: 1995
+    page: '/buildingaccess'
   },
   {
     name: 'Mobile',
-    year: 1987
+    page: '/phone',
   },
   {
     name: 'Mobile stuff',
-    year: 1995
+    page: '/phone',
   },
   {
     name: 'Outlook stuff',
-    year: 1991
+    page: '/outlook',
   },
   {
-    name: 'Skype wont launch',
-    year: 1995
-  },
-  {
-    name: 'Lync',
-    year: 2003
+    name: 'Skype won\'t launch',
+    page: '/skype/wontlaunch',
   }
 ];
 
@@ -89,7 +77,10 @@ function getSuggestionValue(suggestion) {
 
 function renderSuggestion(suggestion) {
   return (
-    <span>{suggestion.name}</span>
+    <div>
+
+    <Link to={suggestion.page} target="_blank">{suggestion.name}</Link>
+    </div>
   );
 }
 
@@ -106,9 +97,16 @@ export default class Searchbar extends React.Component {
 
   onChange = (event, { newValue, method }) => {
     this.setState({
-      value: newValue
+      value: newValue,
+      method: 'enter'
     });
   };
+
+  onKeyDown(e) {
+    if (e.keyCode === 13) {
+
+    }
+  }
 
   onSuggestionsFetchRequested = ({ value }) => {
     const suggestions = getSuggestions(value);
@@ -132,7 +130,7 @@ export default class Searchbar extends React.Component {
     const inputProps = {
       placeholder: "How can we help you?",
       value,
-      onChange: this.onChange
+      onChange: this.onChange,
     };
 
     return (
@@ -144,12 +142,7 @@ export default class Searchbar extends React.Component {
           getSuggestionValue={getSuggestionValue}
           renderSuggestion={renderSuggestion}
           inputProps={inputProps} />
-        {
-          noSuggestions &&
-            <div className="no-suggestions">
-              No suggestions
-            </div>
-        }
+
       </div>
     );
   }

@@ -9,7 +9,7 @@ export default class RsaHeader extends React.Component {
     return (
       <div>
         <div className="Header">
-          <h1>How can we help you with RSA Tokens & VPN?</h1>
+          <h1>How can we help you with Remote Access?</h1>
         </div>
         <div className="BackButton">
           <Link to='../'><img src={icon} height="55px"></img></Link>
