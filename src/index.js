@@ -30,6 +30,10 @@ import CustomersFirst1 from './js/customersfirst/CustomersFirst1.js';
 import CustomersFirstPageApplicationAccess from './js/customersfirst/CustomersFirstPageApplicationAccess.js';
 import CustomersFirstPageCFProperty from './js/customersfirst/CustomersFirstPageCFProperty.js';
 import CustomersFirstPagePrintPortal from './js/customersfirst/CustomersFirstPagePrintPortal.js';
+import Navigator1 from './js/navigator/Navigator1.js';
+import NavigatorPageError from './js/navigator/NavigatorPageError.js';
+import NavigatorPageOpening from './js/navigator/NavigatorPageOpening.js';
+import NavigatorPageUpgrades from './js/navigator/NavigatorPageUpgrades.js';
 
 var Home = React.createClass({
   render: function() {
@@ -73,6 +77,10 @@ ReactDOM.render(
     <Route exact path='/customersfirst/applicationaccess' component={CustomersFirstPageApplicationAccess} />
     <Route exact path='/customersfirst/cfproperty' component={CustomersFirstPageCFProperty} />
     <Route exact path='/customersfirst/printportal' component={CustomersFirstPagePrintPortal} />
+    <Route exact path='/navigator' component={Navigator1} />
+    <Route exact path='/navigator/error' component={NavigatorPageError} />
+    <Route exact path='/navigator/opening' component={NavigatorPageOpening} />
+    <Route exact path='/navigator/upgrades' component={NavigatorPageUpgrades} />
   </Switch>
 </HashRouter>,
 document.getElementById('root')

@@ -1,5 +1,5 @@
 import React from 'react';
-import icon from '../../../media/phone-icon.png';
+import icon from '../../../media/navigator.png';
 
 export default class NavigatorCard extends React.Component {
   render() {
