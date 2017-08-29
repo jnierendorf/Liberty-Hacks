@@ -20,10 +20,6 @@ const theme = {
   userFontColor: '#4a4a4a',
 };
 
-const customersFirst = [
-
-
-]
 
 
 const steps = [
@@ -41,6 +37,7 @@ const steps = [
           { value: 3, label: 'Skype/Lync', trigger: '7' },
           { value: 4, label: 'Mobile Phones', trigger: '32' },
           { value: 5, label: 'Outlook', trigger: '42' },
+          { value: 6, label: 'None of these? Schedule a callback', trigger: '51' },
         ],
       },
       {
@@ -360,7 +357,22 @@ const steps = [
   {
   id: 'customersFirst',
   user: true,
-  trigger: '50',
+    trigger: ({ value, steps }) => {
+        if (value.includes("customersfirst")) {
+          return '50'
+        } else if (value.includes("skype") || value.includes("lync")) {
+          return '7'
+        } else if (value.includes("password") || value.includes("id")) {
+          return '4'
+        } else if (value.includes("outlook")) {
+          return '42'
+        } else if (value.includes("phone") || value.includes("mobile") || value.includes("cell")) {
+          return '7'
+        } else if (value.includes("rsa") || value.includes("remote") || value.includes("access") || value.includes("vpn")) {
+          return '24'
+        }
+        return '54'
+    }
   },
   {
   id: '50',
@@ -370,16 +382,52 @@ const steps = [
   {
   id: 'thankyou',
   user: true,
-  trigger:13,
+  trigger:'13',
+  },
+  {
+  id: '51',
+  message: 'How soon would you like a callback?',
+  trigger: '52',
+  },
+  {
+  id: '52',
+    options: [
+      { value: '1', label: 'ASAP, please!', trigger: '53' },
+      { value: '2', label: '15 minutes', trigger: '53' },
+      { value: '3', label: '30 minutes', trigger: '53' },
+      { value: '4', label: '45 minutes', trigger: '53' },
+      { value: '5', label: '1 hour', trigger: '53' },
+    ],
+  },
+  {
+    id: '53',
+    message: 'A callback message was called!',
+    end: true,
+  },
+  {
+    id: '54',
+    message: 'Hm, I\'m not sure if I understand',
+    trigger: '15',
   }
 ]
 
 export default class ChatBotHelp extends React.Component {
+  componentDidMount() {
+    this.handleEnd = this.handleEnd.bind(this);
+  }
+
+  handleEnd({ steps, values }) {
+    // console.log(steps);
+    // console.log(values);
+    alert(`Chat handleEnd callback! Number: ${values[0]}`);
+  }
+
   render() {
     return (
       <div class="ChatBotHelp">
         <ThemeProvider theme={theme}>
           <ChatBot floating={true}
+          handleEnd={this.handleEnd}
           steps={steps}
           hideUserAvatar={true}
           botAvatar={icon}
