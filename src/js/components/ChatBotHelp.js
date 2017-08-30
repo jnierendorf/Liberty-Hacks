@@ -28,7 +28,7 @@ export default class ChatBotHelp extends React.Component {
   handleEnd({ steps, values }) {
     // console.log(steps);
     // console.log(values);
-    alert(`Callback will be in approximately ${values[2]}.`);
+    alert(`Callback will be in approximately ${values[values.length-1]}.`);
   }
 
   render() {
