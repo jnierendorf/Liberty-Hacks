@@ -6,7 +6,7 @@ export default class Content extends React.Component {
   render() {
     return (
       <div>
-        <Cards />
+        <Cards showNed={this.props.showNed}/>
       </div>
     );
   }

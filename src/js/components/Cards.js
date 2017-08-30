@@ -18,21 +18,9 @@ import { Link } from 'react-router-dom';
 
 
 export default class Cards extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      showNed: true
-    }
-  }
-  togglePopup() {
-    this.setState({
-      showNed: !this.state.showNed
-    });
-  }
   render() {
     return (
       <div className="Cards">
-        <button className="TogglePersona" onClick={this.togglePopup.bind(this)}>Toggle Persona</button>
 
         <Link to='/password'><PasswordCard /></Link>
         <Link to='/rsa'><RsaCard /></Link>
@@ -40,11 +28,11 @@ export default class Cards extends React.Component {
         <Link to='/phone'><PhoneCard /></Link>
         <Link to='/laptops'><LaptopsCard /></Link>
         <Link to='/skype'><SkypeCard /></Link>
-        {this.state.showNed ?
+        {this.props.showNed ?
           <Link to='/benefits'><BenefitsCard/></Link>
           : <Link to='/customersfirst'><CustomersFirstCard/></Link>
         }
-        {this.state.showNed ?
+        {this.props.showNed ?
           <Link to='/buildingaccess'><BuildingAccessCard/></Link>
           : <Link to='navigator'><NavigatorCard/></Link>
         }
