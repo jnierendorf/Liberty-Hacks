@@ -8,6 +8,8 @@ import LaptopsCard from './cards/LaptopsCard';
 import SkypeCard from './cards/SkypeCard';
 import BenefitsCard from './cards/BenefitsCard';
 import BuildingAccessCard from './cards/BuildingAccessCard';
+import CustomersFirstCard from './cards/CustomersFirstCard';
+import NavigatorCard from './cards/NavigatorCard';
 
 
 import '../../css/components/Cards.css';
@@ -19,14 +21,21 @@ export default class Cards extends React.Component {
   render() {
     return (
       <div className="Cards">
+
         <Link to='/password'><PasswordCard /></Link>
         <Link to='/rsa'><RsaCard /></Link>
         <Link to='/outlook'><OutlookCard /></Link>
         <Link to='/phone'><PhoneCard /></Link>
         <Link to='/laptops'><LaptopsCard /></Link>
         <Link to='/skype'><SkypeCard /></Link>
-        <Link to='/benefits'><BenefitsCard/></Link>
-        <Link to='/buildingaccess'><BuildingAccessCard/></Link>
+        {this.props.showNed ?
+          <Link to='/benefits'><BenefitsCard/></Link>
+          : <Link to='/customersfirst'><CustomersFirstCard/></Link>
+        }
+        {this.props.showNed ?
+          <Link to='/buildingaccess'><BuildingAccessCard/></Link>
+          : <Link to='navigator'><NavigatorCard/></Link>
+        }
       </div>
     );
   }

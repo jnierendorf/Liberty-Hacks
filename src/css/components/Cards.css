@@ -50,3 +50,9 @@
   width: 70%;
   margin-top: 10px;
 }
+
+.TogglePersona {
+  position: absolute;
+  top:0;
+  right:0;
+}
