@@ -56,6 +56,8 @@ export default class Contact extends React.Component {
             <ContactPopup
               closePopup={this.togglePopup.bind(this)}
               finishPopup={this.toggleSuccess.bind(this)}
+              nNumber={this.props.nNumber}
+              callbackNumber={this.props.callbackNumber}
             />
             : null
           }
