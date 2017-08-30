@@ -421,10 +421,10 @@ export default class ChatBotHelp extends React.Component {
             id: '52',
               options: [
                 { value: 'as soon as possible', label: 'ASAP, please!', trigger: '53' },
-                { value: 'in 15 minutes', label: '15 minutes', trigger: '53' },
-                { value: 'in 30 minutes', label: '30 minutes', trigger: '53' },
-                { value: 'in 45 minutes', label: '45 minutes', trigger: '53' },
-                { value: 'in 1 hour', label: '1 hour', trigger: '53' },
+                { value: 'in about 15 minutes', label: '15 minutes', trigger: '53' },
+                { value: 'in about 30 minutes', label: '30 minutes', trigger: '53' },
+                { value: 'in about 45 minutes', label: '45 minutes', trigger: '53' },
+                { value: 'around 1 hour from now', label: '1 hour', trigger: '53' },
               ],
             },
             {
