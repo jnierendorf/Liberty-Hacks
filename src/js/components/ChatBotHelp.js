@@ -375,9 +375,22 @@ export default class ChatBotHelp extends React.Component {
               trigger: ({ value, steps }) => {
                   if (value.includes("customersfirst")) {
                     return '50'
+                  } else if (((value.includes("skype") || value.includes("lync")) && (value.includes("picture") || value.includes("photo")))) {
+                    return '16'
+                  } else if ((value.includes("password") && (value.includes("change")))) {
+                    return '20'
+                  } else if ((value.includes("skype") || value.includes("lync")) && (value.includes("apple") || value.includes(" ios ") || value.includes(" iphone"))) {
+                    return '36'
+                  } else if ((value.includes("skype") || value.includes("lync")) && (value.includes("android"))) {
+                    return '38'
+                  } else if ((value.includes("outlook") && (value.includes("out of office reply")))) {
+                    return '46'
+                  } else if ((value.includes("outlook") && (value.includes("picture") || value.includes("photo")))) {
+                    return '44'
+
                   } else if (value.includes("skype") || value.includes("lync")) {
                     return '7'
-                  } else if (value.includes("password") || value.includes("id")) {
+                  } else if (value.includes("password")) {
                     return '4'
                   } else if (value.includes("outlook")) {
                     return '42'
