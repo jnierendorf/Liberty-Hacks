@@ -5,6 +5,7 @@ import Content from './components/Content';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Tutorial from './components/Tutorial';
+import ChatBotHelp from './components/ChatBotHelp';
 
 export default class App extends Component {
   constructor() {
@@ -34,7 +35,7 @@ export default class App extends Component {
         <button className="TogglePersona" onClick={this.togglePopup.bind(this)}>Toggle Persona</button>
         <Header name={this.state.name}/>
         <Content showNed={this.state.showNed}/>
-        <Footer />
+        <Footer name={this.state.name}/>
       </div>
     );
   }

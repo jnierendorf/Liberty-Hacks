@@ -28,10 +28,12 @@ export default class ChatBotHelp extends React.Component {
   handleEnd({ steps, values }) {
     // console.log(steps);
     // console.log(values);
-    alert(`Callback will be in approximately ${values[values.length-1]}.`);
+    alert(`Callback will be ${values[values.length-1]}.`);
   }
 
   render() {
+    //var name = this.props.name;
+    //console.log(name);
     return (
       <div class="ChatBotHelp">
         <ThemeProvider theme={theme}>
@@ -40,7 +42,7 @@ export default class ChatBotHelp extends React.Component {
           steps = {[
             {
                   id: '1',
-                  message: 'Hi Ned! What can I help you with?',
+                  message: 'Hi there! What can I help you with?',
                   trigger: '2',
                   trigger: 'question'
                 },
