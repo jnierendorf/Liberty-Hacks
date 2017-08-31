@@ -41,7 +41,6 @@ export default class App extends Component {
         <button className="TogglePersona" onClick={this.togglePopup.bind(this)}>Toggle Persona</button>
         <Header name={this.state.name}/>
         <Content showNed={this.state.showNed}/>
-        <Footer name={this.state.name}/>
         <Footer nNumber={this.state.nNumber} callbackNumber={this.state.callbackNumber}/>
       </div>
     );
