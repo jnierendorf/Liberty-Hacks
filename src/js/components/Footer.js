@@ -10,6 +10,8 @@ export default class Footer extends React.Component {
       <div>
       <div>
         <Searchbar />
+        <Contact />
+        <ChatBotHelp name={this.props.name}/>
         <Contact nNumber={this.props.nNumber} callbackNumber={this.props.callbackNumber}/>
         <ChatBotHelp />
       </div>
