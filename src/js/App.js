@@ -12,20 +12,26 @@ export default class App extends Component {
     super();
     this.state = {
       name: "Ned",
-      showNed: true
+      showNed: true,
+      nNumber: "n0268610",
+      callbackNumber: "(603)-521-5970"
     }
   }
   togglePopup() {
     if (this.state.name == "Ned") {
       this.setState({
         name: "Cassie",
-        showNed: false
+        showNed: false,
+        nNumber: "n0321661",
+        callbackNumber: "(718)-322-6784"
       });
     }
     else if (this.state.name == "Cassie") {
       this.setState({
         name: "Ned",
-        showNed: true
+        showNed: true,
+        nNumber: "n0268610",
+        callbackNumber: "(603)-521-5970"
       });
     }
   }
@@ -36,6 +42,7 @@ export default class App extends Component {
         <Header name={this.state.name}/>
         <Content showNed={this.state.showNed}/>
         <Footer name={this.state.name}/>
+        <Footer nNumber={this.state.nNumber} callbackNumber={this.state.callbackNumber}/>
       </div>
     );
   }

@@ -23,8 +23,8 @@ export default class ContactPopup extends React.Component {
 
     // Set up state to be ready to collect form info
     this.state = {
-      number: '',
-      callback: '',
+      number: this.props.nNumber,
+      callback: this.props.callbackNumber,
       summary: '',
       urgency: 'low',
       time: 'asap'
@@ -72,7 +72,7 @@ export default class ContactPopup extends React.Component {
 
             <div className="ContactInput ContactSummary">
               <span>Summary of Issue:</span>
-              <textarea type="text" name="summary" value={this.state.summary} onChange={this.handleChange}/>
+              <textarea type="text" name="summary" value={this.state.summary} onChange={this.handleChange} placeholder="(optional)"/>
             </div>
 
             <div className="ContactInput">

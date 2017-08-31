@@ -12,6 +12,8 @@ export default class Footer extends React.Component {
         <Searchbar />
         <Contact />
         <ChatBotHelp name={this.props.name}/>
+        <Contact nNumber={this.props.nNumber} callbackNumber={this.props.callbackNumber}/>
+        <ChatBotHelp />
       </div>
       <div className="Footer">
         <p>1-888-877-2255</p>
